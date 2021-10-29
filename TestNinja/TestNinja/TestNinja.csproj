@@ -48,7 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".gitignore" />
     <Compile Include="Fundamentals\CustomerController.cs" />
     <Compile Include="Fundamentals\DateHelper.cs" />
     <Compile Include="Fundamentals\DemeritPointsCalculator.cs" />
