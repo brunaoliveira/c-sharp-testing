@@ -15,7 +15,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
-        [Ignore("Because testing ignore tag")]
+        [Ignore("Because testing ignore tag ")]
         public void Add_WhenCalled_ReturnSumOfArguments()
         {
             // Act
