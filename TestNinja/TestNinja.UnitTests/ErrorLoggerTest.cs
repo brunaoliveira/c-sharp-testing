@@ -28,6 +28,18 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
+        public void Log_ValidError_ShouldRaiseErrorLoggedEvent()
+        {
+            // subscribe to the event adding a new handler
+            var eventId = Guid.Empty;
+            _errorLogger.ErrorLogged += (sender, args) => { eventId = args; };
+
+            _errorLogger.Log("SOME ERROR");
+
+            Assert.That(eventId, Is.Not.EqualTo(Guid.Empty));
+        }
+
+        [Test]
         [TestCase(null)]
         [TestCase("")]
         [TestCase(" ")]
