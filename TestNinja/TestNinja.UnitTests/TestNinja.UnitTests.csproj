@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerControllerTest.cs" />
+    <Compile Include="ErrorLoggerTest.cs" />
     <Compile Include="HtmlFormatterTests.cs" />
     <Compile Include="ReservationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
